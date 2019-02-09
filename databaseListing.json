@@ -1,0 +1,58 @@
+{
+	"function": "databaseListing",	
+	"Databases": 
+	[
+		{
+			"databasename": "Sales",
+			"tables": [
+						{
+							"Table Name": "Products",
+							"columns":["Item Nbr","UPC","Department","Item Description"],
+							"tabletype":"Attribute"
+						},
+						{
+							"Table Name": "Location",
+							"columns":["Store Nbr","State","City","Address"], 
+							"tabletype":"Attribute"
+						},
+						{
+							"Table Name": "Time",
+							"columns":["Date","Month","Week","Year"],
+							"tabletype":"Attribute"														
+						},
+						{
+							"Table Name": "Measures",
+							"columns":["Sales","Units","Onhands","Orders","In Route Qty"],
+							"tabletype":"Metric"														
+						}
+						
+					]
+		},
+		{
+			"databasename": "Marketing",
+			"tables": [
+						{
+							"Table Name": "Products",
+							"columns":["Item Nbr","Vendor Nbr","UPC","Department","Item Description"],
+							"tabletype":"Attribute"
+						},
+						{
+							"Table Name": "Location",
+							"columns":["Store Nbr","State","City","Address","DMA","Marketing Region"], 
+							"tabletype":"Attribute"
+						},
+						{
+							"Table Name": "Time",
+							"columns":["Date","Month","Week","Year","Fiscal Year"],
+							"tabletype":"Attribute"														
+						},
+						{
+							"Table Name": "Measures",
+							"columns":["Customer Count","Basket Count","Sales","Units","Onhands"],
+							"tabletype":"Metric"														
+						}
+						
+					]
+		}
+	]
+}
