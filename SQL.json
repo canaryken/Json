@@ -1,0 +1,52 @@
+{
+	"function": "SQL",
+	"Database": "canary_test",
+	"columns": 
+	[	
+		{
+			"column_name": "Item Nbr",
+			"table": "Product",
+			"aggregate": "none",
+			"display_name": "Item Number"
+		},
+		{
+			"column_name": "State",
+			"table": "Location",
+			"aggregate": "none",
+			"display_name": "State"
+		},
+		{
+			"column_name": "Week",
+			"table": "Time",
+			"aggregate": "none",
+			"display_name": "Week Number"
+		},
+		{
+			"column_name": "Sales",
+			"table": "Measures",
+			"aggregate": "Sum",
+			"display_name": "Total Weekly Sales"
+		},
+		{
+			"column_name": "Sales",
+			"table": "Measures",
+			"aggregate": "Avg",
+			"display_name": "Average Weekly Sales"
+		}				
+	],
+	"order By":
+	[
+		{
+			"column_name":"Item Nbr",
+			"sort": "Desc"
+		},
+		{
+			"column_name":"Week",
+			"sort": "asc"
+		},
+		{
+			"column_name":"Sales",
+			"sort": "desc"
+		}
+	]
+}
